@@ -4,9 +4,11 @@
   width: 27.2rem;
   height: 100%;
   background-color: var(--backgroundColor);
+  overflow-x: hidden;
+  overflow-y: auto;
 }
-/* .sidebarContainer::-webkit-scrollbar {
-  width: 0.4rem;
+.sidebarContainer::-webkit-scrollbar {
+  width: 0.01rem;
 }
 .sidebarContainer::-webkit-scrollbar-thumb {
   background-color: var(--prp);
@@ -14,7 +16,7 @@
 }
 .sidebarContainer::-webkit-scrollbar-track {
   background-color: #000;
-} */
+}
 .logo {
   width: inherit;
   background-color: var(--bgNav);
@@ -22,21 +24,17 @@
   padding: 1rem 0;
   margin-bottom: 5.3rem;
 }
-
-/* .properties {
-  overflow-y: scroll;
-  height: 100%;
+.logout {
+  width: fit-content;
+  margin: 15rem auto;
+  text-align: center;
+  background-color: var(--prp);
+  padding: 1rem 4.5rem;
+  border-radius: 3px;
+  cursor: pointer;
 }
-
-.properties::-webkit-scrollbar {
-  width: 0.5rem;
+.logout > span {
+  font-size: var(--fontSizeLg);
+  color: var(--cyan);
+  font-weight: var(--fontWghtLg);
 }
-
-.properties::-webkit-scrollbar-thumb {
-  background-color: var(--blue_alt-02);
-  border-radius: 1.2rem;
-}
-
-.properties::-webkit-scrollbar-track {
-  background-color: #f5f5f5;
-} */

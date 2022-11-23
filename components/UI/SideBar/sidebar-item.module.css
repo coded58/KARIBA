@@ -1,0 +1,45 @@
+.sidebarLink {
+  padding: 0rem 2.8rem;
+}
+.sidebarItem {
+  /* margin-bottom: 1.5rem; */
+  width: inherit;
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: aqua; */
+  margin-bottom: 0.6rem;
+  cursor: pointer;
+}
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  font-size: var(--fontSizeLg);
+  font-weight: var(--fontWghtLg);
+  color: var(--blackAlt);
+}
+.sidebarItem .toggleBtn {
+  transition: transform 0.3s;
+}
+.sidebarLink.open .sidebarItem .toggleBtn {
+  transform: rotate(180deg);
+}
+.subMenu {
+  /* padding-top: 0.8rem; */
+  height: 0;
+  overflow: hidden;
+}
+.subMenu > p {
+  font-size: var(--fontSizeM);
+  font-weight: var(--fontWghtMd);
+  color: var(--black);
+  cursor: pointer;
+  margin-top: 1rem;
+  margin-left: 3.88rem;
+  margin-bottom: 1.5rem;
+}
+.sidebarLink.open .subMenu {
+  height: auto;
+}

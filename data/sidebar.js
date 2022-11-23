@@ -5,7 +5,7 @@ import FinanceIcon from "../components/icons/finance-icon";
 import CustomersIcon from "../components/icons/customers-icon";
 import SettingsIcon from "../components/icons/settings-icon";
 import TemplateIcon from "../components/icons/templates-icon";
-const SidebarData = [
+const sidebarData = [
   {
     id: 1,
     title: "Dashboard",
@@ -79,4 +79,4 @@ const SidebarData = [
     icon: <TemplateIcon />,
   },
 ];
-export default SidebarData;
+export default sidebarData;
