@@ -1,0 +1,42 @@
+.sidebarContainer {
+  position: fixed;
+  background-color: var(--grey);
+  width: 27.2rem;
+  height: 100%;
+  background-color: var(--backgroundColor);
+}
+/* .sidebarContainer::-webkit-scrollbar {
+  width: 0.4rem;
+}
+.sidebarContainer::-webkit-scrollbar-thumb {
+  background-color: var(--prp);
+  border-radius: 0.2rem;
+}
+.sidebarContainer::-webkit-scrollbar-track {
+  background-color: #000;
+} */
+.logo {
+  width: inherit;
+  background-color: var(--bgNav);
+  text-align: center;
+  padding: 1rem 0;
+  margin-bottom: 5.3rem;
+}
+
+/* .properties {
+  overflow-y: scroll;
+  height: 100%;
+}
+
+.properties::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+.properties::-webkit-scrollbar-thumb {
+  background-color: var(--blue_alt-02);
+  border-radius: 1.2rem;
+}
+
+.properties::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+} */

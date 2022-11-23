@@ -1,20 +1,43 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Open+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  border: none;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  user-select: none;
 }
-
+html {
+  font-size: 62.58%;
+  scroll-behavior: smooth;
+}
+:root {
+  --fontSizeXlg: 2.4rem;
+  --fontSizeLg: 1.8rem;
+  --fontSizeMd: 1.6rem;
+  --fontSizeM: 1.4rem;
+  --fontSizeSm: 1.2rem;
+  --fontSizeS: 0.8rem;
+  --fontWghtLg: 500;
+  --fontWghtMd: 400;
+  --backgroundColor: #f1f5f9;
+  --black: #000000;
+  --blackAlt: #111111;
+  --blackBld: #080618;
+  --blackSub: #191c20;
+  --blackRGB: rgba(17, 17, 17, 0.8);
+  --tint: #1e293b;
+  --grey: #979797;
+  --blue: #0d99ff;
+  --cyan: #c7fdf5;
+  --prp: #2d2e4d;
+  --bgNav: #212936;
+}
 body {
-  font-family: "Open Sans", "Lato", sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Lato", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
