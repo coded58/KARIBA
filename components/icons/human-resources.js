@@ -22,8 +22,8 @@ const HumanResourcesIcon = () => {
       <path
         d='M7.98242 12.3667L9.75633 14.0667L13.3042 10.6667'
         stroke='#94A3B8'
-        stroke-width='2.26667'
-        stroke-linecap='square'
+        strokeWidth='2.26667'
+        strokeLinecap='square'
       />
       <rect
         x='4.43506'

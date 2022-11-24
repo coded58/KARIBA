@@ -35,7 +35,7 @@ const SidebarItem = (props) => {
         </div>
         <div className={classes.subMenu}>
           {props.subMenu.map((menu, index) => (
-            <Link href={menu.path}>
+            <Link href={menu.path} key={index}>
               <p>{menu.title}</p>
             </Link>
           ))}

@@ -1,25 +1,33 @@
 // import { useEffect } from "react";
-// import "materialize-css/dist/css/materialize.min.css";
-// import M from "materialize-css/dist/js/materialize.min.js";
+import "materialize-css/dist/css/materialize.min.css";
+import dynamic from "next/dynamic";
 import Link from "next/link";
 import Employess from "../data/employees";
 import Header from "../components/UI/Header/Header";
 import classes from "../styles/index.module.css";
-import { Fragment } from "react";
-import MyChart from "../components/UI/Chart/Chart";
+import { useEffect } from "react";
 import Card from "../components/UI/Card/card";
 import MessageIcon from "../components/icons/message-icon";
 import LeaveIcon from "../components/icons/leave-icon";
 import NewsletterIcon from "../components/icons/newsletter-icon";
+import Customers from "../components/UI/Customers/customers";
 function HomePage() {
-  // useEffect(() => {
-  //   // Initial Materialize
-  //   if (typeof window !== "undefined") {
-  //     console.log("window.innerHeight", window.innerHeight);
-  //   }
-  //   M.AutoInit();
-  //   console.log("window.innerHeight", window.innerHeight);
-  // }, []);
+  useEffect(() => {
+    window.navigator.geolocation.getCurrentPosition(
+      (newPos) => setPosition(newPos),
+      console.error
+    );
+  }, []);
+  useEffect(() => {
+    // if (typeof window !== "undefined") {
+    //   const M = require("materialize-css/dist/css/materialize.min.css");
+    // }
+    const M = require("materialize-css/dist/js/materialize");
+    M.AutoInit();
+  }, []);
+  const MyChart = dynamic(() => import("../components/UI/Chart/Chart"), {
+    ssr: false,
+  });
   return (
     <div
       style={{
@@ -59,80 +67,91 @@ function HomePage() {
         <div className={classes.chart}>
           <MyChart />
         </div>
-        <div className={classes.activity}>
-          <h2 className={classes.activityText}>Recent Activity</h2>
-          <div className={classes.recent}>
-            <div className={classes.day}>
-              <h2>TODAY</h2>
-            </div>
-            <div className={classes.message}>
-              <div className={classes.messageFlex}>
-                <span>
-                  <MessageIcon />
-                </span>
-                <h3>James Doe Approved Completed task</h3>
+        <div className={classes.group}>
+          <div className={classes.activity}>
+            <h2 className={classes.activityText}>Recent Activity</h2>
+            <div className={classes.recent}>
+              <div className={classes.day}>
+                <h2>TODAY</h2>
               </div>
-              <p className={classes.view}>View -&gt;</p>
-            </div>
-            <div className={classes.banner}></div>
-            <div className={classes.message}>
-              <div className={classes.messageFlex}>
-                <span>
-                  <LeaveIcon />
-                </span>
-                <h3 style={{ color: "#475569", fontWeight: 400 }}>
-                  Raymond Best and 3 others are on leave
-                </h3>
-              </div>
-              <p className={classes.view}>View -&gt;</p>
-            </div>
-            <div className={classes.banner}></div>
-          </div>
-          <div className={classes.recent}>
-            <div className={classes.day}>
-              <h2>YESTERDAY</h2>
-            </div>
-            <div className={classes.message}>
-              <div className={classes.messageFlex}>
-                <span>
-                  <NewsletterIcon />
-                </span>
-                <h3 style={{ fontSize: "1.4rem", fontWeight: 400 }}>
-                  <span style={{ fontWeight: 500, color: "#1E293B" }}>
-                    240+
+              <div className={classes.message}>
+                <div className={classes.messageFlex}>
+                  <span>
+                    <MessageIcon />
                   </span>
-                  <span style={{ color: "#475569", fontWeight: 400 }}>
-                    users have subscribe to
-                  </span>{" "}
-                  <span style={{ fontWeight: 500, color: "#1E293B" }}>
-                    {" "}
-                    Newsletter #1
+                  <h3>James Doe Approved Completed task</h3>
+                </div>
+                <p className={classes.view}>View -&gt;</p>
+              </div>
+              <div className={classes.banner}></div>
+              <div className={classes.message}>
+                <div className={classes.messageFlex}>
+                  <span>
+                    <LeaveIcon />
                   </span>
-                </h3>
+                  <h3 style={{ color: "#475569", fontWeight: 400 }}>
+                    Raymond Best and 3 others are on leave
+                  </h3>
+                </div>
+                <p className={classes.view}>View -&gt;</p>
               </div>
-              <p className={classes.view}>View -&gt;</p>
+              <div className={classes.banner}></div>
             </div>
-            <div className={classes.banner}></div>
-            <div className={classes.message}>
-              <div className={classes.messageFlex}>
-                <span>
-                  <LeaveIcon />
-                </span>
-                <h3
-                  style={{
-                    color: "#475569",
-                    fontWeight: 400,
-                    fontSize: "1.4rem",
-                  }}>
-                  Ikechukwu Smart was suspended by Chioma Ade
-                </h3>
+            <div className={classes.recent}>
+              <div className={classes.day}>
+                <h2>YESTERDAY</h2>
               </div>
-              <p className={classes.view}>View -&gt;</p>
+              <div className={classes.message}>
+                <div className={classes.messageFlex}>
+                  <span>
+                    <NewsletterIcon />
+                  </span>
+                  <h3 style={{ fontSize: "1.4rem", fontWeight: 400 }}>
+                    <span style={{ fontWeight: 500, color: "#1E293B" }}>
+                      240+
+                    </span>
+                    <span style={{ color: "#475569", fontWeight: 400 }}>
+                      users have subscribe to
+                    </span>{" "}
+                    <span style={{ fontWeight: 500, color: "#1E293B" }}>
+                      {" "}
+                      Newsletter #1
+                    </span>
+                  </h3>
+                </div>
+                <p className={classes.view}>View -&gt;</p>
+              </div>
+              <div className={classes.banner}></div>
+              <div className={classes.message}>
+                <div className={classes.messageFlex}>
+                  <span>
+                    <LeaveIcon />
+                  </span>
+                  <h3
+                    style={{
+                      color: "#475569",
+                      fontWeight: 400,
+                      fontSize: "1.4rem",
+                    }}>
+                    Ikechukwu Smart was suspended by Chioma Ade
+                  </h3>
+                </div>
+                <p className={classes.view}>View -&gt;</p>
+              </div>
             </div>
           </div>
+          <Customers />
         </div>
       </div>
     </div>
   );
 }
 export default HomePage;
+// useEffect(() => {
+//   // Initial Materialize
+//   if (typeof window !== "undefined") {
+//     console.log("window.innerHeight", window.innerHeight);
+//   }
+//   M.AutoInit();
+//   console.log("window.innerHeight", window.innerHeight);
+// }, []);

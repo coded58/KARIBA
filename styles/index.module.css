@@ -1,6 +1,6 @@
 .container {
   /* padding: 10rem 8rem 0 6rem; */
-  padding: 4.5rem 8rem;
+  padding: 4.5rem 5rem 4.5rem 8rem;
 
   /* width: 100%; */
   flex: 1;
@@ -42,8 +42,13 @@
 .chart {
   margin-bottom: 4rem;
 }
+.group {
+  display: flex;
+  gap: 3.5rem;
+}
 .activity {
-  max-width: 59.6rem;
+  max-width: 55.6rem;
+  width: 100%;
   border: 1px solid #e2e8f0;
   background: #ffffff;
   border: 1px solid #e2e8f0;
