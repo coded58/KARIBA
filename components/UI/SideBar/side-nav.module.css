@@ -1,6 +1,8 @@
 .sidebarContainer {
   background-color: var(--grey);
-  width: 35.2rem;
+  /* width: 28.2rem; */
+  flex: 2;
+
   height: 100%;
   background-color: var(--backgroundColor);
   overflow-x: hidden;
@@ -20,7 +22,7 @@
   width: inherit;
   background-color: var(--bgNav);
   text-align: center;
-  margin-left: -4rem;
+  /* margin-left: -4rem; */
   padding: 1rem 0;
   margin-bottom: 5.3rem;
 }

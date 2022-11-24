@@ -1,5 +1,8 @@
 .header {
   width: 100%;
+  position: sticky;
+  top: 0;
+  /* margin-left: 28rem; */
   height: 5.7rem;
   background-color: #fafafa;
   border-bottom: 2px solid #dbdce5;

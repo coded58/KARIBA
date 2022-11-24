@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import classes from "./sidebar-item.module.css";
+import Link from "next/link";
 // import ChevronIcon from "../../icons/chevron";
 
 const SidebarItem = (props) => {
@@ -33,9 +34,10 @@ const SidebarItem = (props) => {
           </span>
         </div>
         <div className={classes.subMenu}>
-          {props.subMenu.map((menu, index) => (
+          <Link href='/about'>ff</Link>
+          {/* {props.subMenu.map((menu, index) => (
             <p>{menu.title}</p>
-          ))}
+          ))} */}
         </div>
       </div>
     );
