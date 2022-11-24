@@ -16,7 +16,7 @@ const SearchIcon = () => {
       />
       <mask
         id='mask0_58_884'
-        style='mask-type:alpha'
+        // style='mask-type:alpha'
         maskUnits='userSpaceOnUse'
         x='2'
         y='2'

@@ -13,7 +13,7 @@
   user-select: none;
 }
 html {
-  font-size: 62.58%;
+  font-size: 62.58% !important;
   scroll-behavior: smooth;
 }
 :root {
@@ -40,4 +40,8 @@ html {
 }
 body {
   font-family: "Roboto", sans-serif;
+}
+.app {
+  display: flex;
+  height: 100%;
 }
