@@ -48,7 +48,7 @@ body {
 .errorPage {
   flex: 7;
 }
-.errorPage > h1 {
+.errorPage .errorText {
   margin: 20rem 10rem;
   font-size: var(--fontSizeXlg);
 }

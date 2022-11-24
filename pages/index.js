@@ -1,7 +1,7 @@
-// import { useEffect } from "react";
 import "materialize-css/dist/css/materialize.min.css";
 import dynamic from "next/dynamic";
 import Link from "next/link";
+import Head from "next/head";
 import Employess from "../data/employees";
 import Header from "../components/UI/Header/Header";
 import classes from "../styles/index.module.css";
@@ -19,9 +19,6 @@ function HomePage() {
     );
   }, []);
   useEffect(() => {
-    // if (typeof window !== "undefined") {
-    //   const M = require("materialize-css/dist/css/materialize.min.css");
-    // }
     const M = require("materialize-css/dist/js/materialize");
     M.AutoInit();
   }, []);
@@ -35,12 +32,15 @@ function HomePage() {
         flexDirection: "column",
         flex: 7,
       }}>
+      <Head>
+        <title>KARIBA - Dashboard</title>
+      </Head>
       <Header link='Dashboard' />
       <div className={classes.container}>
         <div className={classes.topContainer}>
           <div className={classes.top}>
             <div className={classes.topText}>
-              <h2>Overview</h2>
+              <h2 className={classes.overviewText}>Overview</h2>
               <p>Monday 14th November, 2022</p>
             </div>
           </div>
@@ -147,11 +147,3 @@ function HomePage() {
   );
 }
 export default HomePage;
-// useEffect(() => {
-//   // Initial Materialize
-//   if (typeof window !== "undefined") {
-//     console.log("window.innerHeight", window.innerHeight);
-//   }
-//   M.AutoInit();
-//   console.log("window.innerHeight", window.innerHeight);
-// }, []);

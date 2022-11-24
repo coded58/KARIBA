@@ -10,9 +10,11 @@
   justify-content: space-between;
   margin-bottom: 2.5rem;
 }
-.topText > h2 {
+.topText .overviewText {
   font-size: var(--fontSizeXlg);
   font-weight: var(--fontWghtMd);
+  margin: 0 !important
+  ;
 }
 .topText > p {
   font-size: var(--fontSizeMd);

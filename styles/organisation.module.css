@@ -1,0 +1,82 @@
+.container {
+  padding: 4.5rem 5rem 4.5rem 8rem;
+  flex: 1;
+}
+.top {
+  margin-bottom: 1.4rem;
+}
+.topText .overviewText {
+  font-size: var(--fontSizeXlg);
+  font-weight: var(--fontWghtMd);
+  color: var(--blackSub);
+  margin: 0 !important;
+}
+.topText > p {
+  font-size: var(--fontSizeMd);
+  font-weight: var(--fontWghtMd);
+  color: var(--blackSub);
+  padding-top: 0.4rem;
+}
+.employee {
+  display: flex;
+  gap: 1.6rem;
+  margin-bottom: 4rem;
+}
+.subSection {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+.searchBox {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+.searchBox .categories {
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0px 10px 15px -3px rgba(15, 23, 42, 0.08);
+  border-radius: 2px;
+  padding: 1.7rem 3rem;
+}
+.categories p {
+  font-size: var(--fontSizeMd);
+  font-weight: var(--fontWghtMd);
+  color: #979797;
+  cursor: pointer;
+}
+.categories .active {
+  color: var(--blue);
+  font-weight: 700;
+}
+.inputField {
+  border: 1px solid #d8d8d8 !important;
+  margin-top: 0.5rem !important;
+  border-radius: 4px !important;
+  width: 21rem !important;
+  padding: 1.2rem 0 1.2rem 3rem !important;
+}
+.inputField::placeholder {
+  font-weight: 400 !important;
+  font-size: 12px !important;
+  line-height: 14px;
+  /* identical to box height */
+
+  color: #979797 !important;
+}
+.newEmployee {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.newEmployee > a {
+  color: var(--blackAlt);
+  font-size: var(--fontSizeM);
+  font-weight: 400;
+  padding: 0.8rem 1.7rem;
+  background: #d8d8d8;
+  border-radius: 4px;
+}
