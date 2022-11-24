@@ -1,4 +1,5 @@
 import React from "react";
+import Header from "../components/UI/Header/Header";
 
 const about = () => {
   return (
@@ -9,6 +10,7 @@ const about = () => {
         flex: 7,
       }}>
       <Header link='Dashboard' />
+      <div>hello</div>
     </div>
   );
 };

@@ -1,6 +1,6 @@
 .container {
   /* padding: 10rem 8rem 0 6rem; */
-  padding: 10rem 8rem;
+  padding: 4.5rem 8rem;
 
   /* width: 100%; */
   flex: 1;
@@ -38,4 +38,66 @@
   display: flex;
   gap: 1.6rem;
   margin-bottom: 4rem;
+}
+.chart {
+  margin-bottom: 4rem;
+}
+.activity {
+  max-width: 59.6rem;
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0px 10px 15px -3px rgba(15, 23, 42, 0.08);
+  border-radius: 2px;
+  padding: 0 2rem 6rem 2rem;
+}
+.activityText {
+  font-size: var(--fontSizeMd);
+  color: var(--tint);
+  font-weight: 600;
+  line-height: 2.4rem;
+  border-bottom: 1px solid #f1f5f9;
+  padding: 1.6rem 0;
+}
+.recent {
+  margin-top: 1.2rem;
+}
+.day {
+  background-color: #f8fafc;
+  border-radius: 2px;
+  width: inherit;
+  padding: 0.8rem 1.2rem;
+  margin-bottom: 1.2rem;
+}
+.day > h2 {
+  font-size: var(--fontSizeSm);
+  font-weight: 600;
+  color: #9ca3af;
+}
+.message {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.messageFlex > h3 {
+  font-size: 1.4rem;
+  font-weight: var(--fontWghtLg);
+  color: var(--tint);
+}
+.messageFlex {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.view {
+  color: var(--blue);
+  font-size: var(--fontSizeM);
+  font-weight: var(--fontWghtLg);
+  padding-right: 0.7rem;
+}
+.banner {
+  width: 50rem;
+  margin: 0.5rem 4.5rem;
+  border: 0.7px solid #f1f5f9;
 }

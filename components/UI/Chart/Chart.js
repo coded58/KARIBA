@@ -6,14 +6,14 @@ function MyChart() {
   const [state, setState] = useState({
     series: [
       {
-        name: "Paid",
+        name: "current",
         data: [44, 55, 41, 67, 22, 43, 23, 20, 36, 45, 35, 50],
-        color: "#49FE57",
+        color: "#6366F1",
       },
       {
-        name: "Incomplete",
+        name: "Previous",
         data: [11, 17, 15, 15, 21, 14, 18, 6, 20, 17, 13, 9],
-        color: "#FFC702",
+        color: "#38BDF8",
       },
       {
         name: "Unpaid",
@@ -129,24 +129,24 @@ function MyChart() {
       <ReactApexChart
         options={state.options}
         series={state.series}
-        type='bar'
+        type='line'
         width={720}
         height={488}
       />
-      <ReactApexChart
+      {/* <ReactApexChart
         options={state.options}
         series={state.series}
         type='line'
         width={686}
         height={488}
-      />
-      <ReactApexChart
+      /> */}
+      {/* <ReactApexChart
         options={state.options}
         series={state.series}
         type='area'
         width={686}
         height={488}
-      />
+      /> */}
     </div>
   );
 }

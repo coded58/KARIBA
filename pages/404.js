@@ -1,8 +1,9 @@
 import React from "react";
+import Header from "../components/UI/Header/Header";
 
 function PageNotFound() {
   return (
-    <div>
+    <div className='errorPage'>
       <h1>Page Not Found!!!</h1>
     </div>
   );

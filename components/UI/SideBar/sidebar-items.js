@@ -34,10 +34,11 @@ const SidebarItem = (props) => {
           </span>
         </div>
         <div className={classes.subMenu}>
-          <Link href='/about'>ff</Link>
-          {/* {props.subMenu.map((menu, index) => (
-            <p>{menu.title}</p>
-          ))} */}
+          {props.subMenu.map((menu, index) => (
+            <Link href={menu.path}>
+              <p>{menu.title}</p>
+            </Link>
+          ))}
         </div>
       </div>
     );
@@ -48,10 +49,12 @@ const SidebarItem = (props) => {
           open ? `${classes.sidebarLink} ${classes.open}` : classes.sidebarLink
         }>
         <div className={classes.sidebarItem} onClick={() => setOpen(!open)}>
-          <span className={classes.icons}>
-            {props.icon}
-            {props.title}
-          </span>
+          <Link href={`${props.path}`}>
+            <span className={classes.icons}>
+              {props.icon}
+              {props.title}
+            </span>
+          </Link>
         </div>
       </div>
     );

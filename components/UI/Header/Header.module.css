@@ -2,6 +2,7 @@
   width: 100%;
   position: sticky;
   top: 0;
+  z-index: 10;
   /* margin-left: 28rem; */
   height: 5.7rem;
   background-color: #fafafa;

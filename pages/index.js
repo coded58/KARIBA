@@ -6,7 +6,11 @@ import Employess from "../data/employees";
 import Header from "../components/UI/Header/Header";
 import classes from "../styles/index.module.css";
 import { Fragment } from "react";
+import MyChart from "../components/UI/Chart/Chart";
 import Card from "../components/UI/Card/card";
+import MessageIcon from "../components/icons/message-icon";
+import LeaveIcon from "../components/icons/leave-icon";
+import NewsletterIcon from "../components/icons/newsletter-icon";
 function HomePage() {
   // useEffect(() => {
   //   // Initial Materialize
@@ -52,8 +56,82 @@ function HomePage() {
             />
           ))}
         </div>
+        <div className={classes.chart}>
+          <MyChart />
+        </div>
+        <div className={classes.activity}>
+          <h2 className={classes.activityText}>Recent Activity</h2>
+          <div className={classes.recent}>
+            <div className={classes.day}>
+              <h2>TODAY</h2>
+            </div>
+            <div className={classes.message}>
+              <div className={classes.messageFlex}>
+                <span>
+                  <MessageIcon />
+                </span>
+                <h3>James Doe Approved Completed task</h3>
+              </div>
+              <p className={classes.view}>View -&gt;</p>
+            </div>
+            <div className={classes.banner}></div>
+            <div className={classes.message}>
+              <div className={classes.messageFlex}>
+                <span>
+                  <LeaveIcon />
+                </span>
+                <h3 style={{ color: "#475569", fontWeight: 400 }}>
+                  Raymond Best and 3 others are on leave
+                </h3>
+              </div>
+              <p className={classes.view}>View -&gt;</p>
+            </div>
+            <div className={classes.banner}></div>
+          </div>
+          <div className={classes.recent}>
+            <div className={classes.day}>
+              <h2>YESTERDAY</h2>
+            </div>
+            <div className={classes.message}>
+              <div className={classes.messageFlex}>
+                <span>
+                  <NewsletterIcon />
+                </span>
+                <h3 style={{ fontSize: "1.4rem", fontWeight: 400 }}>
+                  <span style={{ fontWeight: 500, color: "#1E293B" }}>
+                    240+
+                  </span>
+                  <span style={{ color: "#475569", fontWeight: 400 }}>
+                    users have subscribe to
+                  </span>{" "}
+                  <span style={{ fontWeight: 500, color: "#1E293B" }}>
+                    {" "}
+                    Newsletter #1
+                  </span>
+                </h3>
+              </div>
+              <p className={classes.view}>View -&gt;</p>
+            </div>
+            <div className={classes.banner}></div>
+            <div className={classes.message}>
+              <div className={classes.messageFlex}>
+                <span>
+                  <LeaveIcon />
+                </span>
+                <h3
+                  style={{
+                    color: "#475569",
+                    fontWeight: 400,
+                    fontSize: "1.4rem",
+                  }}>
+                  Ikechukwu Smart was suspended by Chioma Ade
+                </h3>
+              </div>
+              <p className={classes.view}>View -&gt;</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div>hellloo</div>
     </div>
   );
 }

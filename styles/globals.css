@@ -45,3 +45,10 @@ body {
   display: flex;
   height: 100%;
 }
+.errorPage {
+  flex: 7;
+}
+.errorPage > h1 {
+  margin: 20rem 10rem;
+  font-size: var(--fontSizeXlg);
+}

@@ -17,7 +17,7 @@ const SideBar = () => {
           title={sideLink.title}
           icon={sideLink.icon}
           subMenu={sideLink.subMenu}
-          // path={sideLink.path}
+          path={sideLink.path}
         />
       ))}
       <div className={classes.logout}>
