@@ -77,6 +77,7 @@ const sidebarData = [
     id: 7,
     title: "Templates",
     icon: <TemplateIcon />,
+    path: "/templates",
   },
 ];
 export default sidebarData;

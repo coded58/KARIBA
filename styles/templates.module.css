@@ -1,0 +1,19 @@
+.container {
+  padding: 4.5rem 5rem 4.5rem 8rem;
+  flex: 1;
+}
+.top {
+  margin-bottom: 3.4rem;
+}
+.topText .overviewText {
+  font-size: var(--fontSizeXlg);
+  font-weight: var(--fontWghtMd);
+  color: var(--blackSub);
+  margin: 0 !important;
+}
+.topText > p {
+  font-weight: 400;
+  font-size: 16px;
+
+  color: rgba(30, 41, 59, 0.8);
+}

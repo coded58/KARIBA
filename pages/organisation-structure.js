@@ -7,8 +7,10 @@ import Card from "../components/UI/Card/card";
 import Link from "next/link";
 import Employee from "../components/UI/Employee/Employee";
 import Organogram from "../components/UI/Organogram/organogram";
+import Modal from "../components/UI/Modal/Modal";
 const OrganisationStructure = () => {
   const [toggle, setToggle] = useState("Employee");
+  const [showModal, setShowModal] = useState(false);
   return (
     <div
       style={{
@@ -61,10 +63,13 @@ const OrganisationStructure = () => {
           </div>
           <div className={classes.newEmployee}>
             <img src='/images/filter.png' alt='filter jpeg' />
-            <a href='#add-employee-modal' className={classes.addBtn}>
+            <a onClick={() => setShowModal(true)} className={classes.addBtn}>
               Add New Employees
             </a>
           </div>
+          <Modal show={showModal} onClose={() => setShowModal(false)}>
+            <h1 className={classes.modalHeader}>Add New Employees</h1>
+          </Modal>
         </div>
         {toggle === "Employee" && <Employee />}
         {toggle === "Organogram" && <Organogram />}
