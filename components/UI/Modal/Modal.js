@@ -27,10 +27,10 @@ const Modal = ({ show, onClose, children }) => {
               <path
                 d='M0.757812 11.2431L6.00081 6.00008M11.2438 0.75708L5.99981 6.00008M5.99981 6.00008L0.757812 0.75708M6.00081 6.00008L11.2438 11.2431'
                 stroke='#111111'
-                stroke-opacity='0.8'
-                stroke-width='1.5'
-                stroke-linecap='round'
-                stroke-linejoin='round'
+                strokeOpacity='0.8'
+                strokeWidth='1.5'
+                strokeLinecap='round'
+                strokeLinejoin='round'
               />
             </svg>
           </a>

@@ -43,12 +43,12 @@ const OrganisationStructure = () => {
           <div className={classes.searchBox}>
             <div className={classes.categories}>
               <p
-                className={toggle === "Employee" && classes.active}
+                className={toggle === "Employee" ? classes.active : undefined}
                 onClick={() => setToggle("Employee")}>
                 All Employees
               </p>
               <p
-                className={toggle === "Organogram" && classes.active}
+                className={toggle === "Organogram" ? classes.active : undefined}
                 onClick={() => setToggle("Organogram")}>
                 Organogram
               </p>

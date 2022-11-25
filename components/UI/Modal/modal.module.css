@@ -34,9 +34,8 @@
   background-color: rgba(0, 0, 0, 0.4);
 }
 .close {
-  position: relative;
-  top: 9vh;
-  left: -5rem;
+  margin-right: 4rem;
+  margin-top: 2rem;
 }
 .modal {
   position: fixed;

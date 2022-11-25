@@ -8,7 +8,7 @@ function MyChart() {
       {
         name: "Total",
         data: [44, 55, 41, 67, 22, 43, 23, 20, 36, 45, 35, 50],
-        color: "#6366F1",
+        color: "#0D99FF",
       },
       {
         name: "New",
@@ -18,7 +18,7 @@ function MyChart() {
       {
         name: "Active",
         data: [13, 23, 20, 8, 13, 27, 15, 9, 27, 5, 22, 10],
-        color: "#FF5630",
+        color: "#10B981",
       },
     ],
     options: {
@@ -62,7 +62,7 @@ function MyChart() {
       plotOptions: {
         bar: {
           horizontal: false,
-          columnWidth: 80,
+          columnWidth: 70,
         },
       },
       xaxis: {
@@ -135,7 +135,7 @@ function MyChart() {
         options={state.options}
         series={state.series}
         type='bar'
-        width={686}
+        width={700}
         height={488}
       />
       {/* <ReactApexChart
