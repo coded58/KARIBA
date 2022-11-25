@@ -6,6 +6,7 @@ import OrganizationData from "../data/organization";
 import Card from "../components/UI/Card/card";
 import Link from "next/link";
 import Employee from "../components/UI/Employee/Employee";
+import Organogram from "../components/UI/Organogram/organogram";
 const OrganisationStructure = () => {
   const [toggle, setToggle] = useState("Employee");
   return (
@@ -66,7 +67,7 @@ const OrganisationStructure = () => {
           </div>
         </div>
         {toggle === "Employee" && <Employee />}
-        {toggle === "Organogram" && <h1>Organogram</h1>}
+        {toggle === "Organogram" && <Organogram />}
       </div>
     </div>
   );
