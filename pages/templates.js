@@ -24,6 +24,7 @@ const Template = () => {
             </p>
           </div>
         </div>
+        <div className={classes}></div>
       </div>
     </div>
   );

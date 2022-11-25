@@ -4,7 +4,7 @@ import Header from "../components/UI/Header/Header";
 function PageNotFound() {
   return (
     <div className='errorPage'>
-      <h1 className={classes.errorText}>Page Not Found!!!</h1>
+      <h1 className='errorText'>Page Not Found!!!</h1>
     </div>
   );
 }
